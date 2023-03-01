@@ -18,8 +18,6 @@ async function main() {
 
     // Write possibly tainted data
     await writeUserData(sanitizedData);
-    await writeUserData(sanitizedData);
-    await writeUserData(sanitizedData);
   }
 }
 main();
