@@ -4,7 +4,7 @@ A repo used in a demo of internal data extensions for code scanning.
 
 ## Getting started in vscode
 
-This requires vscode-codeql v1.7.13 or later.
+This requires vscode-codeql v1.7.13 or later and CodeQL CLI v2.12.3 or later.
 
 1. Clone this repository in a sibling directory to a checkout of `codeql`
 2. In the repo's root directory, run:
@@ -15,3 +15,7 @@ This requires vscode-codeql v1.7.13 or later.
 6. You should see a single result.
 7. Open `.github/codeql/extensions/custom-extensions.yml` and comment out one of the `addsTo` blocks.
 8. Re-run the query and you should see no results.
+
+## Getting started in code scanning
+
+The extension pack defined at `.github/codeql/extensions` will automatically be used in code scanning.
