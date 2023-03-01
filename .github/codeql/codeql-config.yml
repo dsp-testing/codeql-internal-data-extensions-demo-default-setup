@@ -1,0 +1,5 @@
+name: "CodeQL config"
+
+query-filters:
+- include:
+    id: js/command-line-injection
