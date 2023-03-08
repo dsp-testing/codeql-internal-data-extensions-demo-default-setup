@@ -19,3 +19,20 @@ This requires vscode-codeql v1.7.13 or later and CodeQL CLI v2.12.3 or later.
 ## Getting started in code scanning
 
 The extension pack defined at `.github/codeql/extensions` will automatically be used in code scanning.
+It includes the following data:
+
+```
+extensions:
+  - addsTo:
+      pack: codeql/javascript-all
+      extensible: sourceModel
+    data:
+      - [ "@example/read-write-user-data", "Member[readUserData].ReturnValue.Awaited", "remote" ]
+
+  - addsTo:
+      pack: codeql/javascript-all
+      extensible: sinkModel
+    data:
+      - [ "@example/read-write-user-data", "Member[writeUserData].Argument[0]", "command-line-injection" ]
+```
+
