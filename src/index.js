@@ -5,6 +5,7 @@ import {
   writeUserData
 } from '@example/read-write-user-data';
 
+// Example function to trigger a code scanning alert
 async function main() {
   while (true) {
 
